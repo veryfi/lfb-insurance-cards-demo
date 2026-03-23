@@ -1,0 +1,155 @@
+/* ─────────────────────────────────────────────
+   Veryfi Lens SDK – Component Style Overrides
+   Matches the app's dark theme with blue accents
+   ───────────────────────────────────────────── */
+
+:root {
+  /* ── Shared Modal Tokens ─────────────────── */
+  --lens-modal-bg: #232740;
+  --lens-modal-radius: 16px;
+  --lens-modal-padding: 28px 32px;
+  --lens-modal-text: #e4e6f0;
+  --lens-modal-text-muted: #8b8fa8;
+  --lens-modal-font: 'Inter', system-ui, -apple-system, sans-serif;
+  --lens-primary: #4f6ef7;
+  --lens-primary-hover: #3b5de5;
+  --lens-secondary-border: rgba(255, 255, 255, 0.12);
+  --lens-secondary-text: #c4c7da;
+  --lens-btn-radius: 10px;
+  --lens-btn-padding: 13px 24px;
+  --lens-btn-font-size: 14px;
+  --lens-btn-font-weight: 600;
+
+  /* ── Blur Modal ──────────────────────────── */
+  --blur-modal-background-color: var(--lens-modal-bg);
+  --blur-modal-border-radius: var(--lens-modal-radius);
+  --blur-modal-padding: var(--lens-modal-padding);
+  --blur-modal-max-width: 320px;
+  --blur-modal-width: 320px;
+  --blur-modal-text-color: var(--lens-modal-text);
+  --blur-modal-text-font-family: var(--lens-modal-font);
+  --blur-modal-text-font-size: 15px;
+  --blur-modal-button-width: 100%;
+  --blur-modal-button-padding: var(--lens-btn-padding);
+  --blur-modal-button-border-radius: var(--lens-btn-radius);
+  --blur-modal-button-font-family: var(--lens-modal-font);
+  --blur-modal-button-font-size: var(--lens-btn-font-size);
+  --blur-modal-button-font-weight: var(--lens-btn-font-weight);
+  --blur-modal-primary-button-background: var(--lens-primary);
+  --blur-modal-primary-button-color: #fff;
+  --blur-modal-secondary-button-background: transparent;
+  --blur-modal-secondary-button-border: 1px solid var(--lens-secondary-border);
+  --blur-modal-secondary-button-color: var(--lens-secondary-text);
+
+  /* ── Document Modal ──────────────────────── */
+  --document-modal-background-color: var(--lens-modal-bg);
+  --document-modal-border-radius: var(--lens-modal-radius);
+  --document-modal-padding: var(--lens-modal-padding);
+  --document-modal-max-width: 320px;
+  --document-modal-width: 320px;
+  --document-modal-text-color: var(--lens-modal-text);
+  --document-modal-text-font-family: var(--lens-modal-font);
+  --document-modal-text-font-size: 15px;
+  --document-modal-button-width: 100%;
+  --document-modal-button-padding: var(--lens-btn-padding);
+  --document-modal-button-border-radius: var(--lens-btn-radius);
+  --document-modal-button-font-family: var(--lens-modal-font);
+  --document-modal-button-font-size: var(--lens-btn-font-size);
+  --document-modal-button-font-weight: var(--lens-btn-font-weight);
+  --document-modal-primary-button-background: var(--lens-primary);
+  --document-modal-primary-button-color: #fff;
+  --document-modal-secondary-button-background: transparent;
+  --document-modal-secondary-button-border: 1px solid var(--lens-secondary-border);
+  --document-modal-secondary-button-color: var(--lens-secondary-text);
+
+  /* ── Anydoc Page Controls ────────────────── */
+  --anydoc-add-button-padding: var(--lens-btn-padding);
+  --anydoc-add-button-background-color: var(--lens-modal-bg);
+  --anydoc-add-button-color: var(--lens-modal-text);
+  --anydoc-add-button-border-radius: var(--lens-btn-radius);
+  --anydoc-add-button-font-size: var(--lens-btn-font-size);
+  --anydoc-add-button-font-family: var(--lens-modal-font);
+  --anydoc-add-button-font-weight: var(--lens-btn-font-weight);
+  --anydoc-add-button-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+
+  --anydoc-submit-button-padding: var(--lens-btn-padding);
+  --anydoc-submit-button-background-color: var(--lens-primary);
+  --anydoc-submit-button-color: #fff;
+  --anydoc-submit-button-border-radius: var(--lens-btn-radius);
+  --anydoc-submit-button-font-size: var(--lens-btn-font-size);
+  --anydoc-submit-button-font-family: var(--lens-modal-font);
+  --anydoc-submit-button-font-weight: var(--lens-btn-font-weight);
+  --anydoc-submit-button-box-shadow: 0 2px 12px rgba(79, 110, 247, 0.3);
+
+  /* ── Anydoc Flip Message Modal ───────────── */
+  --anydoc-flip-background-color: var(--lens-modal-bg);
+  --anydoc-flip-border-radius: var(--lens-modal-radius);
+  --anydoc-flip-padding: var(--lens-modal-padding);
+  --anydoc-flip-max-width: 320px;
+  --anydoc-flip-width: 320px;
+  --anydoc-flip-text-color: var(--lens-modal-text);
+  --anydoc-flip-text-font-family: var(--lens-modal-font);
+  --anydoc-flip-text-font-size: 15px;
+  --anydoc-flip-button-width: 100%;
+  --anydoc-flip-button-padding: var(--lens-btn-padding);
+  --anydoc-flip-button-border-radius: var(--lens-btn-radius);
+  --anydoc-flip-button-background-color: var(--lens-primary);
+  --anydoc-flip-button-color: #fff;
+  --anydoc-flip-button-font-weight: var(--lens-btn-font-weight);
+  --anydoc-flip-button-font-family: var(--lens-modal-font);
+  --anydoc-flip-button-font-size: var(--lens-btn-font-size);
+
+  /* ── Gallery ─────────────────────────────── */
+  --anydoc-gallery-arrow-background: rgba(35, 39, 64, 0.8);
+  --anydoc-gallery-arrow-color: #e4e6f0;
+  --anydoc-gallery-arrow-border-radius: 8px;
+  --anydoc-gallery-arrow-size: 38px;
+  --anydoc-gallery-arrow-font-size: 20px;
+  --anydoc-gallery-indicator-color: #e4e6f0;
+  --anydoc-gallery-indicator-font-family: var(--lens-modal-font);
+  --anydoc-gallery-image-border-radius: 12px;
+}
+
+/* ── Strip the outer modal wrapper so only the
+     inner div renders the card surface ─────────── */
+
+#veryfi-blur-modal,
+#veryfi-document-modal {
+  padding: 0 !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+#veryfi-blur-modal > div,
+#veryfi-document-modal > div {
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+}
+
+#veryfi-anydoc-flip-message {
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* ── Button hover states inside SDK modals ── */
+
+#veryfi-retake-blur:hover,
+#veryfi-retake-document:hover,
+#veryfi-anydoc-flip-continue:hover,
+#veryfi-anydoc-submit:hover {
+  filter: brightness(1.12);
+}
+
+#veryfi-submit-blur:hover,
+#veryfi-submit-document:hover {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+#veryfi-anydoc-add-page:hover {
+  background-color: #2a2f4a !important;
+}
+
+/* ── Hide app while Lens is active ─────────── */
+
+#app.hidden {
+  display: none;
+}

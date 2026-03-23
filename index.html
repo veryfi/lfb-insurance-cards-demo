@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Veryfi Lens Anydocs Demo</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Veryfi Lens Anydocs Demo</h1>
+        </header>
+
+        <main>
+            <div class="settings-panel">
+                <h2 class="settings-title">Settings</h2>
+
+                <label class="setting-row" for="setting-auto-capture">
+                    <span class="setting-label">Auto Document Capture</span>
+                    <div class="toggle">
+                        <input type="checkbox" id="setting-auto-capture" checked>
+                        <span class="toggle-track"></span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="scanner-controls">
+                <button class="scan-btn" data-type="anydocs">
+                    <span class="btn-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zM8 13h8v2H8v-2zm0 4h5v2H8v-2z"/>
+                        </svg>
+                    </span>
+                    Scan Document
+                </button>
+            </div>
+
+            <div id="status-display" class="status-display"></div>
+            <div id="result-display" class="result-display"></div>
+        </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
