@@ -36,7 +36,28 @@ SDK component style overrides (modals, buttons, controls) live in `src/lens-over
 
 ## Testing on Mobile Devices
 
-The camera API requires HTTPS. To test on a mobile device on your local network:
+The camera API requires HTTPS. To test on a mobile device you can either use **ngrok** or a **local SSL proxy**.
+
+### Option A: ngrok
+
+1. Start the dev server and run ngrok:
+   ```bash
+   npm run dev
+   ngrok http 5173
+   ```
+
+2. Add ngrok's hostname to `vite.config.js`:
+   ```js
+   export default defineConfig({
+     server: {
+       allowedHosts: ['your-subdomain.ngrok-free.app'],
+     },
+   });
+   ```
+
+3. Open the ngrok URL on your mobile device.
+
+### Option B: Local SSL Proxy
 
 1. Generate a local SSL certificate (replace the IP with your machine's local IP):
    ```bash
