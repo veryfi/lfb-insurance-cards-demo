@@ -12,6 +12,6 @@
     "vite": "^7.3.1"
   },
   "dependencies": {
-    "veryfi-lens-wasm": "^3.0.2"
+    "veryfi-lens-wasm": "latest"
   }
 }
